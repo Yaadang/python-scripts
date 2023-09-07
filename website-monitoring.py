@@ -31,6 +31,8 @@ def restart_container():
     print(stdin)
     print(stdout.readlines())
     print("application restarted")
+    ssh.close()
+    
 
 
 def restart_server_and_container():
